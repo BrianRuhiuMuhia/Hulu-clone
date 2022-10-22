@@ -1,0 +1,360 @@
+*,*::before,*::after{
+    padding:0;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+}
+html body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+:root{
+    --color-text:white;
+}
+.header{
+    color:white;
+    height: 65rem;
+}
+.header__section{
+display:flex;
+align-items: center;
+justify-content: center;
+background-color: pink;
+}
+img{
+    width:clamp(200px,300px,20vw);
+}
+.wrapper{
+display:block;
+width:90%;
+max-width:1440px;
+
+}
+
+.main-sect{
+    background-image: url("img/header.jpg");
+    height: 65%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-sect--items{
+    display:flex;
+    height:100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    gap:2em;
+}
+.h2{
+    text-align:center ;
+    text-transform:capitalize;
+}
+.header__btn{
+position:absolute;
+background-color: transparent;
+color:white;
+border:none;
+top:5%;
+right:10%;
+font-weight: bolder;
+}
+.link-btn{
+    color:black;
+    background-color: white;
+    padding:1em 4em;
+    text-transform: uppercase;
+    border-radius: 0.2em;
+    font-weight: bolder;
+}
+.lime{
+    color: #00ed82;
+    text-transform: uppercase;
+}
+.sect-brand{
+    background: linear-gradient( 318.68deg, #0f495c 0%, #0d3640 49.72%, #08141f 100% );
+    height:35%;
+}
+.sect-brand--items{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3,auto);
+    gap:1em;
+    align-items: center;
+    justify-content: center;
+    padding:1.3em;
+}
+.sect-brand--items div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:0.5em;
+    text-align: center;
+}
+.sect-brand__link{
+    text-transform:capitalize;
+    text-decoration: underline;
+    font-size: small;
+}
+.sect-brand__btn{
+text-transform: uppercase;
+background-color: transparent;
+padding:1em;
+border: solid 2px white;
+}
+@media screen and (min-width:900px){
+.main-sect--items-h2{
+    display:flex;
+    flex-direction: column;
+    gap:1em;
+}
+    .main-sect--items-h2::after{
+content:"HBO Max™, SHOWTIME®, CINEMAX® and STARZ® available as add-ons."
+    }
+    .main-sect{
+height:85%;
+    }
+    .sect-brand{
+height:15%;
+}
+.sect-brand--items{
+    grid-template-columns: repeat(3,1fr);
+    align-items: flex-start;
+        grid-template-rows: auto;
+    }
+}
+.main{
+   min-height:100vh;
+   color:white;
+    }
+.main .main__section{
+
+}
+.section-one{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+
+}
+.section-one--items{
+    padding-block:2em;
+    display:flex;
+    flex-direction: column;
+    gap:2em;
+    align-items: center;
+    justify-content: center;
+}
+.section-two{
+    
+    background-color: black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.section-two--items{
+    margin-block:2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:2em;
+    border: 2px solid lime;
+    text-align: center;
+    padding-block: 3em;
+    
+}
+.item-one{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap:1em;
+}
+.cards{
+    display:flex;
+    gap:2em;
+flex-direction: column;
+}
+.card{
+    position:relative;
+}
+.card-body{
+    position: absolute;
+    padding:1em 0 0 1em;
+    top:0;
+    background-color:rgba(0, 0, 0, 0.233);
+    width:100%;
+    height:100%;
+}
+.h1{
+font-size:2em;
+}
+.p{
+    font-size:1em;
+    }
+.section-three{
+    background-image: url("img/live-sports-small.jpg");
+    background-size:cover;
+    background-position: center center;
+    color:white;
+    display: flex;
+    align-items: center;
+padding-block:10em;
+}
+.section-three--items{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap:1em;
+width: 400px;
+text-align: left;
+margin-left: 4em;
+}
+.section-three--items img{
+    width:50px;
+    height:50px;
+    padding:0.2em;
+    background-color: white;
+    border-radius:100%;
+}
+
+.footer{
+background-color: rgba(128, 128, 128, 0.349);
+position:relative;
+bottom:0;
+height:25rem;
+display:flex;
+align-items: center;
+justify-content: center;
+}
+.footer__items{
+    display:flex;
+    flex-direction: column;
+    margin:0 1em;
+}
+ul{
+    list-style: none;
+}
+.footer__links{
+    display:flex;
+    margin-block:2em;
+    justify-content: space-between;
+}
+.list-heading{
+    text-transform:uppercase;
+    font-weight: bolder;
+}
+.footer__items .footer__links ul li:not(.list-heading){
+    text-transform: capitalize;
+}
+.footer__links ul{
+    display:flex;
+    gap:1em;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+}
+.footer__items .footer__icons img{
+    width:30px;
+    height:20px;
+}
+.footer__icons{
+    border-top:1px solid grey;
+    padding-block:1em;
+    display: flex;
+    gap:2em;
+}
+@media screen and (min-width:900px) {
+    .section-three{
+        background-image: url("img/live-sports.jpg");
+    }
+    .cards{
+        flex-direction: row;
+    }
+    .h1{
+        font-size:4em;
+        }
+        .p{
+            font-size:2em;
+            }
+            .section-three--items{
+                gap:3em;
+            }
+}
+@media screen and (max-width:900px) {
+    .footer{
+        height:auto;
+    }
+    .footer__links{
+        flex-direction: column;
+    }
+    .footer__links ul{
+        gap:0.5em;
+    }
+}
+.modal{
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.404);
+    width:100%;
+    height:100%;
+    display:none;
+}
+.show{
+    display:block;
+}
+form{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    display:flex;
+    width:100%;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content:center;
+    font-size:clamp(1vw,1em,4vw);
+    background-color:white;
+    padding-inline: 1em;
+    gap:0.5em;
+    height:400px;
+    width:500px;
+}
+label{
+    text-transform: capitalize;
+    font-weight: bold;
+    color:grey
+}
+input{
+    width:100%;
+    border:solid 0.5px rgb(194, 194, 194);
+    height: 10%;
+    margin-block: .1em;
+    outline: none;
+    padding-inline:0.5em;
+    padding-block:1em;
+}
+.submit-btn{
+    border:none;
+    color:white;
+    background-color: orange;
+    text-transform: capitalize;
+    padding-inline:3em;
+    padding-block: 0.5em;
+    border:solid orange 2px;
+}
+form .close-btn{
+    background-image: url("img/close.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width:20px;
+    height:20px;
+    border: none;
+    margin-left:auto ;
+}
